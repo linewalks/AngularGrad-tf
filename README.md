@@ -49,4 +49,10 @@ AngularGrad(
 )
 ```
 
-Developed by [linewalks](linewalks.com)
+## Tested version
+- Python 3.6.9
+- Tensorflow 2.5.0
+
+Developed by Eunchan Lee(eunchan@linewalks.com), 2021 [Linewalks](linewalks.com).
+
+If there is any problem in this repository, please feel free to contact us at the above email address.
