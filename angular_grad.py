@@ -25,13 +25,9 @@ class AngularGrad(tf.keras.optimizers.Optimizer):
   def _create_slots(self, var_list):
     for var in var_list:
       self.add_slot(var, "exp_avg")
-    for var in var_list:
       self.add_slot(var, "exp_avg_sq")
-    for var in var_list:
       self.add_slot(var, "previous_grad")
-    for var in var_list:
       self.add_slot(var, "min", initializer=tf.keras.initializers.Constant(value=math.pi / 2))
-    for var in var_list:
       self.add_slot(var, "final_angle_function_theta")
 
   def _resource_apply_dense(self, grad, var):
